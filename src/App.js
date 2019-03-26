@@ -16,9 +16,9 @@ class App extends Component {
       </div>
     );
   }
-  count(){
+  count(event){
     this.setState({
-                  counter : document.getElementById("myTextarea").value.length
+                  counter : event.target.value.length
                   });
   }
 }
